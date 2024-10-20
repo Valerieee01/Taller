@@ -29,9 +29,9 @@ function OrdenarNumeros(...array) {
     for (let i = 0; i < array.length - 1; i++) {
         for (let f = 0; f < array.length - 1 - i; f++) { // se compara el actual con el siguiente
             if (array[f] < array[f + 1]) {  // Si el elemento actual es menor que el siguiente, los intercambia
-                let temp = array[f];
+                let temporal = array[f];
                 array[f] = array[f + 1];
-                array[f + 1] = temp;
+                array[f + 1] = temporal;
             }
         }
     }
